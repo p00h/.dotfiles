@@ -1,0 +1,6 @@
+[submodule "zgen"]
+	path = zgen
+	url = https://github.com/tarjoilija/zgen
+[submodule "zsh-async"]
+	path = zsh-async
+	url = https://github.com/mafredri/zsh-async.git
