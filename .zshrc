@@ -55,7 +55,7 @@ if ! zgen saved; then
 	zgen save
 fi
 
-
+[ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
 # bind UP and DOWN arrow keys for substring search
 zmodload zsh/terminfo
