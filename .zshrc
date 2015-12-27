@@ -1,5 +1,7 @@
 # Dotfiles
 export DOTFILES="${HOME}/.dotfiles"
+# Load local settings
+[ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
 # Load zgen framework
 ZGEN_DIR="${DOTFILES}/.zgen"
@@ -56,7 +58,6 @@ if ! zgen saved; then
 	zgen save
 fi
 
-[ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
 # bind UP and DOWN arrow keys for substring search
 zmodload zsh/terminfo
