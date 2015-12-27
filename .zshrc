@@ -18,7 +18,6 @@ DISABLE_VENV_CD=1
 # global variables
 export EDITOR="vim"
 export VISUAL="vim"
-export WORKON_HOME="${HOME}/.virtualenvs"
 
 source "${DOTFILES}/zgen/zgen.zsh"
 
