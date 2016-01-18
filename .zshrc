@@ -1,5 +1,6 @@
 # Dotfiles
 export DOTFILES="${HOME}/.dotfiles"
+
 # Load local settings
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
@@ -44,16 +45,13 @@ if ! zgen saved; then
 	zgen oh-my-zsh plugins/rsync
 	zgen oh-my-zsh plugins/systemd
 	zgen oh-my-zsh plugins/tmux
-	zgen oh-my-zsh plugins/virtualenv
-	zgen oh-my-zsh plugins/virtualenvwrapper
+    [ -f ~/.zshrc_local_zgen ] && source ~/.zshrc_local_zgen
 
 	zgen load zsh-users/zsh-syntax-highlighting
 	zgen load zsh-users/zsh-history-substring-search
 	zgen load mafredri/zsh-async
     zgen load psprint/zsh-navigation-tools
-
 	zgen load "$DOTFILES/colorful-theme-zsh"
-
 	zgen save
 fi
 
